@@ -1,26 +1,112 @@
-.title{
+body {
+  background-color: #3F51B5;
+  color: white;
+}
+
+.title {
+  background-color: #303F9F;
   height: 150px;
   width: 850px;
   align: center;
-  border-style:solid;
-  border-width:1px;
-  margin-left:250px;
+  border-style: none;
+  border-width: 1px;
+  margin-left: 250px;
   margin-top: 20px;
-  margin-right:10px;
+  margin-right: 10px;
   padding: 20px 20px 20px 20px;
 }
-.title h2{
-  text-align:center;
+
+.title h1 {
+  text-align: center;
 }
-button{
-  height:40px;
-  width:40px;
+
+.title h3 {
+  text-align: center;
 }
-#start,#stop,#reset{
-  height:50px;
-  width:70px;
+
+button {
+  display: inline-block;
+  height: 42px;
+  width: 65px;
 }
-p{
-  font-size:55px;
+
+#start,
+#stop,
+#reset {
+  height: 50px;
+  width: 80px;
+  background-color: #E91E63;
+  color: white;
+  border: none;
+  font-size: 20px;
+}
+
+#break_down,
+#break_up,
+#session_down,
+#session_up {
+  color: white;
+  border: none;
+  background-color: #009688;
+  font-size: 22px;
   font-weight: bold;
+}
+
+p {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.horizontal h2 {
+  display: inline-flex;
+}
+
+input[type=number] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  background-color: #3F51B5;
+  font-size: 55px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 580px) {
+  
+  .title {
+    background-color: #303F9F;
+    height: 100px;
+    width: auto;
+    align: center;
+    border-style: none;
+    border-width: 1px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px 10px 10px 10px;
+  }
+  .title h1 {
+  text-align: center;
+    font-size: 28px;
+}
+
+.title h3 {
+  text-align: center;
+  font-size: 18px;
+}
+  h3,h2{
+    font-size: 20px;
+  }
+  p{
+    font-size: 45px;
+  font-weight: bold;
+  }
+ 
 }
